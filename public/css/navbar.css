@@ -1,0 +1,188 @@
+.navbar {
+    background-color: rgba(255, 255, 255, 0.519);
+    /* z-index: 5; */
+
+    /* position: fixed; */
+
+    /* position property is used 
+       to fix navbar */
+    top: 0;
+    width: 100%;
+    top: 0;
+    /* height: 80px; */
+
+    /* worked */
+    /* position: fixed; */
+    /* display: flex; */
+    /*   justify-content: space-around;*/
+    /* widt : 100%; */
+    /* align-items: center; align-items-center*/
+    /* Nothing */
+    /* right: 0; */
+    /* left: 0; */
+    /* top: 0; */
+    /* margin: auto; */
+
+
+
+    /* transition-timing-function: ease-in-out;
+    transition-delay: 1s;
+    z-index: 1; */
+}
+
+
+.navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+.padding-top {
+    padding-top: 80rem;
+    background-color: red;
+}
+
+/*--**DONE**--*/
+/* .navbar .title-nav {
+    display: flex; 
+    align-items: flex-end;
+   
+} */
+
+
+/*--**DONE**--*/
+.img {
+    /* .navbar .title-nav img     */
+    width: 4rem;
+    height: 4rem;
+}
+
+/*--**DONE**--*/
+.paraghraph {
+    /* .navbar .title-nav p */
+    font-family: 'Anton', sans-serif;
+    /* background-color: transparent; */
+    color: var(--main-color);
+}
+
+/*--**DONE**--*/
+.textLogoColor {
+    /* .navbar .title-nav p .text-logo-color */
+    color: var(--base-color);
+}
+
+/*--**DONE**--*/
+.ul {
+    /* .navbar .nav-list ul */
+    display: flex;
+    /* background-color: #808080; */
+    justify-content: space-around;
+    /* width: 9rem; */
+    margin: auto;
+    /*3shan ynzl el text fi nafs el line*/
+    text-align: center;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+
+}
+
+
+.li {
+    /* .navbar .nav-list ul li  */
+    background-color: rgba(255, 0, 0, 0);
+    /* display: inline-block !important; */
+    /* position: relative; */
+
+    width: 10rem;
+
+    /* margin: auto; */
+
+    /* done */
+    /* list-style: none; * / / *list-unstyled*/
+
+    /* background-color: rgb(255, 0, 195); */
+
+    /* WRONG */
+    /* justify-content: space-around;
+    align-items: center; */
+}
+
+/*--**DONE**--*/
+/* 
+.navbar .nav-list ul li a {
+    text-decoration: none;
+    color: black;
+
+    /* text-decoration-none text-dark bootstrap * /
+}
+*/
+
+/* DIDN'T USE IT IN STYLE MODULE */
+.listDecoration {
+    /* .text-decoration-none.text-dark */
+    position: relative;
+    cursor: pointer;
+
+}
+
+
+/* .text-decoration-none.text-dark::after {
+
+
+    /* background: red; * /
+border-bottom: 10rem solid rgba(0, 0, 0, 0.292);
+position: absolute;
+width: 100%;
+/* text-align: center; * /
+height: 1px;
+bottom: 0;
+left: 0.1rem;
+content: " ";
+/* transform: scaleX(0); * /
+
+    /* background-color: #0087ca; * /
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+
+}
+
+.text-decoration-none.text-dark:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+} */
+
+
+
+.listDecoration::after {
+    /* .text-decoration-none.text-dark::after */
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.5rem;
+    bottom: 0;
+    top: 1.4rem;
+    left: 0;
+
+    /* border-bottom: var(--main-color) solid; */
+
+    background-color: var(--main-color);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.listDecoration:hover::after {
+    /* .text-decoration-none.text-dark:hover::after */
+    /* color: var(--base-color); */
+    transform: scaleX(1);
+    transform-origin: bottom left;
+
+}
+
+
+
+.button {
+    background-color: var(--main-color) !important;
+}

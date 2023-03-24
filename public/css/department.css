@@ -1,0 +1,100 @@
+.department {
+    /* .department */
+
+    height: 100vh;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.departmentIcon {
+    /* .department-icon  */
+    /*.container3*/
+    position: relative;
+    overflow: hidden;
+    /*after*/
+    z-index: 2;
+    height: 120%;
+}
+
+.departmentIconP {
+    /* department-icon p  */
+    padding: 0.5rem;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+}
+
+.imageContainer {
+    /* .department-icon .image-container */
+    /*.container3*/
+    background-color: var(--main-color);
+    width: 10rem;
+    height: 10rem;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 5rem;
+}
+
+.departmentIcon::after {
+    /* .department-icon::after */
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url(../imges/abstract-medical-background-with-flat-icons-symbols-concepts-ideas-healthcare-technology-innovation-medicine-health-science-research_120542-415.avif);
+    /* background: url(../../../public/imges/abstract-medical-background-with-flat-icons-symbols-concepts-ideas-healthcare-technology-innovation-medicine-health-science-research_120542-415.avif); */
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    /* margin: 0; */
+    top: 0;
+    left: -102%;
+    z-index: -1;
+    transition: 1s;
+    filter: blur(5px);
+    border: solid rgb(15, 132, 200);
+
+}
+
+.departmentIcon:hover::after {
+    /* .department-icon:hover::after */
+    left: 0;
+
+}
+
+.img-icon {
+    /* .department-icon .image-container img */
+    /*.container3*/
+    width: 9rem;
+    height: 9rem;
+}
+
+.button {
+    /* .department-icon button  */
+    /*.container3*/
+    /* background-color: red; */
+    background-color: var(--main-color) !important;
+    font-weight: bold;
+
+    /* width: 9rem; */
+    /* height: 3rem; */
+    /* border-radius: 40px; */
+
+    /* padding: .25rem; */
+    /* padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem; */
+
+    /* btn px-5 py-3 */
+}
+
+.button:hover {
+    /* .department-icon button:hover */
+    /* background-color: var(--base-color); */
+    color: black !important;
+    background-color: transparent !important;
+    border: solid var(--main-color) !important;
+}

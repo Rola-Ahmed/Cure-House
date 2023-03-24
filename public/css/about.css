@@ -1,0 +1,67 @@
+/* *****About************** */
+#about {
+    background-color: var(--background-color);
+}
+
+
+.container2 .about-title .p-desc {
+    font-size: 1.3rem;
+    /* font-weight: bold; */
+}
+
+/* DONE IN B OOTSTRAP */
+/* .container2 {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+
+} */
+
+.about-title {
+    /* padding: -2rem;
+    padding: 0%;
+    margin: 0;
+    text-align: center; */
+}
+
+/* DONE IN B OOTSTRAP */
+/* .container2 .section2-image {
+    height: 100vh;
+} */
+
+.container2 .section2-image img {
+    width: 80%;
+    /* height: 100%; */
+}
+
+.container2 .about-title {
+    /* width: 50%; */
+    margin-right: 4rem;
+    /* usless */
+    /* align-items: center; */
+    /* border: 2px solid black; */
+
+}
+
+
+.container2 .about-title h1 {
+    font-family: 'Anton', sans-serif;
+    /* DONE  */
+    /* font-size: 4rem; display-3" */
+    padding-top: 2%;
+    text-shadow: 0.2rem 0.01rem black;
+
+}
+
+.container2 .about-title .text-logo-color-part1 {
+    color: var(--base-color);
+}
+
+.container2 .about-title .text-logo-color-part2 {
+    color: var(--main-color);
+}
+
+/* .container2 .about-title .p-desc {
+    ctrl F ".p-desc";
+} */

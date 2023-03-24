@@ -1,0 +1,109 @@
+.banner {
+    /* background-image: url("{{ asset('../imges/home_background/bannerpic1.jpg') }}"); */
+
+    background-image: url(../imges/home_background/bannerpic1.jpg);
+    /* background-image: url('../../public/imges/home_background/bannerpic1.jpg'); */
+    /* background-image: url("{{ asset('../imges/home_background/bannerpic1.jpg') }}"); */
+
+    /* background-image: url("../../public/imges/3d_icon.png"); */
+
+    /* background-image: '{{asset("../imges/3d_icon.png")}}'; */
+
+    /* background-image: url("{{asset('/imges/3d_icon.png') }}"); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    height: cacl (100vh - 80px);
+    /**** Done ****/
+    /* display: flex; */
+    /* height: 100vh; */
+    /* vh-100; */
+    /* justify-content: center; */
+
+
+    /* height: calc(100vh - 41.6px- 40px); */
+
+
+}
+
+
+.overlay {
+    /* .banner .overlay */
+    background-color: rgba(99, 80, 80, 0.416);
+
+    /*height: 100vh;
+    width: 100%; */
+    /* usless */
+    /* display: flex; */
+}
+
+
+/**********HOME**********/
+.container1 {
+    width: 35%;
+    margin-top: 9rem;
+    margin-left: 5rem;
+
+    /* ****DOne ******/
+    /* padding: 0.5rem;  p-3*/
+    /* text-align: left;*/
+    /* border: 2px solid; */
+
+
+    /* USLESS */
+    /* height: 50%; */
+
+
+
+    /* background-color: rgba(255, 0, 0, 0.519); */
+
+
+}
+
+/* DIDNT WORK */
+.welcomingDesc {
+    /* .container1 .title-description .welcoming-desc */
+    padding-top: 0%;
+    color: var(--base-color);
+    text-shadow: 0.1rem 0.01rem black;
+    font-size: 1.5rem;
+    line-height: 1.15;
+    letter-spacing: -.02em;
+
+    /* DONE */
+    /* font-weight: bold; fw-bold */
+
+    /* USLESS */
+    /* width: 100%;*/
+
+    /* background-color: rgb(23, 7, 7); */
+
+}
+
+.h1 {
+    /* .container1 .title-description h1  */
+    font-family: 'Anton', sans-serif;
+    font-size: 6rem;
+    padding-top: 2%;
+}
+
+.PDesc {
+    /* p-desc */
+    color: var(--Paraghraph-color);
+    font-size: 1.3rem;
+}
+
+.button {
+    /* font-weight: bold; */
+    background-color: var(--main-color) !important;
+    /* border-radius: 40px; */
+    /* rounded */
+    width: auto;
+}
+
+.flex {
+    display: flex !important;
+
+}

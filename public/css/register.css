@@ -1,0 +1,66 @@
+.section {
+
+    background-color: var(--background-color-main) !important;
+    /* --background-color */
+    /* height: 100% !important; */
+}
+
+.container-card {
+    /* border: 5px solid var(--main-color) !important; */
+    border-radius: 2em !important;
+    /* height: 50% !important; */
+
+}
+
+
+.title {
+    font-family: 'Anton', sans-serif !important;
+    padding-top: 2% !important;
+    /* font-size: 6rem !important;
+     */
+    /* color: var(--main-color) !important; */
+}
+
+i {
+    color: var(--main-color)
+}
+
+.input-group-text,
+.form-control,
+select {
+    border: 2px solid var(--main-color) !important;
+
+}
+
+/* .input-group-text:hover,
+.form-control:hover,
+.input-group-text:focus,
+.form-control:focus {
+    outline: none !important;
+    outline-style: none !important;
+    box-shadow: none !important;
+} */
+
+*:focus {
+    /* box-shadow: none !important; */
+    box-shadow: 2px 2px 5pt 3pt var(--main-color) !important;
+
+    /* box-shadow: 0 0 5pt 1pt var(--main-color) !important; */
+}
+
+/* input:focus,
+input:active,
+input:hover {
+ 
+    outline: none !important;
+    outline-style: none !important;
+   
+    box-shadow: none !important;
+
+} */
+
+.button {
+    padding-top: 2% !important;
+    font-family: 'Anton', sans-serif !important;
+    background-color: var(--main-color) !important;
+}
