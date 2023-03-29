@@ -19,4 +19,11 @@ class PatientController extends Controller
         // $blogs = Blog::get();
         return view('dashboardpages.patients.patientrecords', ['patientRecords' => $patient_rec]);
     }
+
+    function AddNewPatient()
+    {
+
+
+        return view("dashboardpages.patients.addnewpatient");
+    }
 }

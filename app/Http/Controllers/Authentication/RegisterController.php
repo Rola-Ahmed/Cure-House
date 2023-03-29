@@ -100,7 +100,7 @@ class RegisterController extends Controller
 
 
 
-        $imageHolder = 'defualt-image';
+        $imageHolder = 'defualt-image.jpg';
         if ($req->hasFile('uploaded_profile_image')) {
             $image = $req->file('uploaded_profile_image');
             $nameOfImg = time() . '_Dental_Flow' . "." . $image->getClientOriginalExtension();

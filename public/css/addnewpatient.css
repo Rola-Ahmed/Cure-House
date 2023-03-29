@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* box-sizing: border-box; */
+    /*display: flex;*/
+
+
+    /* padding-top: 10px; */
+}
+
+.contanier {
+    padding: 2rem;
+    width: 35%;
+    border: 4px var(--background-color-main) dashed;
+    /* margin: 0 auto; */
+    /* background-color: rgb(3, 0, 52); */
+
+}
+
+.section {
+
+    text-align: center;
+}
+
+/* .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60%;
+    /* object-fit: fill; * /
+width: 55%;
+height: 60%;
+overflow: hidden;
+}
+
+*/
+img {
+    /* width: 100%;
+    height: 100%; */
+
+    border-radius: 60%;
+    object-fit: fill;
+    width: 55%;
+    height: 60%;
+}
+
+.images {
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    display: inline;
+    width: 15rem;
+    height: 15rem;
+    align-content: center;
+    /* border: 1px solid rgb(181, 13, 13); */
+    /* border-radius: 50%; */
+
+    /*width: 150px;*/
+}
+
+
+/**************/
+.container1 {
+    padding: 1rem;
+    margin-left: 2rem;
+
+    /* background-color: rgb(0, 211, 42); */
+    border: 4px var(--background-color-main) dashed;
+
+    width: 100%;
+    /* height: 100%; */
+}
+
+*:focus {
+    box-shadow: 2px 2px 5pt 3pt var(--main-color) !important;
+    /* outline: none !important; */
+    /* box-shadow: 0 0 5pt 1pt var(--main-color) !important; */
+}
+
+.container-profile {
+    /* width: 90% !important; */
+    height: 90%;
+    /* background-color: red; */
+}
+
+.form {
+    border: 4px var(--background-color-main) dashed;
+    margin: 1rem;
+    padding: 1rem;
+    /* display: flex; */
+    /* background-color: red; */
+    width: 100%
+}
+
+.form-group.row {
+    padding: 1.3rem !important;
+    /* background-color: rgba(255, 0, 144, 0.331); */
+}
+
+input {
+    /* background-color: red; */
+    background-color: white !important;
+    border-radius: 0px var(--background-color-main) dashed !important;
+    /* border-top-style: hidden !important;
+    border-right-style: hidden !important;
+    border-left-style: hidden !important;
+    border-bottom-style: groove !important;
+    background-color: #eee !important; */
+}
+
+*:focus {
+    outline: none !important;
+    border: none !important;
+    outline-style: none !important;
+    /* box-shadow: none !important; */
+
+}
+
+
+.form-control {
+    border: none !important;
+    border-bottom: 2px solid var(--main-color) !important;
+
+}
+
+
+button {
+    margin: 1rem !important;
+    background-color: var(--main-color) !important;
+}
+
+.form-group.column {
+    /* background-color: aquamarine; */
+    /* display: flex !important; */
+
+}

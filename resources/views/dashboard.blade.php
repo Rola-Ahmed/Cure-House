@@ -1,4 +1,5 @@
 <head>
+
     <link href="{{asset('css/dashboard.css')}}" rel="stylesheet">
     <link href="{{asset('css/main.css')}}" rel="stylesheet">
     {{--
@@ -63,8 +64,10 @@
 <div class="sidebar">
     <a class="active" href="#home">DashBoard</a>
     {{-- <i class="fa-solid fa-gauge-simple"></i> --}}
-    <a href="#news"><i class="fa-solid fa-user-doctor"></i>Add Doctors</a> {{-- Admin --}}
-    <a href="#news"><i class="fa-solid fa-hospital-user"></i>Add Patient</a> {{-- Admin --}}
+    <a href="{{ url("registerForm") }}"><i class="fa-solid fa-user-doctor"></i>Add Doctors</a> {{-- Admin
+    registerForm --}}
+    <a href="{{ url("add/new/patient") }}"><i class="fa-solid fa-hospital-user"></i>Add Patient</a> {{-- Admin
+    --}}
     <a href="#news"><i class="fa-solid fa-calendar-check"></i>Add Appointments</a>
     <a href="{{ url("patient/records") }}"><i class="fa-solid fa-book-medical"></i>Patient records</a>
     <a href="#news">Appointmetns</a>

@@ -36,6 +36,7 @@ class PatientSeeder extends Seeder
                 'phone_number' => '+20' + \Str::random(10),
                 'doctor_id' => 1,
                 'admin_id' => 2,
+                
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);

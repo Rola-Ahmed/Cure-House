@@ -1,0 +1,111 @@
+/* .department-icon.py-5 p {
+    color: var(--main-color);
+}
+
+*/
+
+
+
+/* .backgroundColor {
+    z-index: 5;
+    bacckground-color: red !important;
+} */
+
+.aboutTitle {
+    /* .about-title */
+    padding: -2rem;
+    padding: 0%;
+    margin: 0;
+    text-align: center;
+}
+
+.aboutTitleH1 {
+    /* .container4 .about-title h1 */
+    font-family: 'Anton', sans-serif;
+    /* font-size: 3rem; */
+    font-size: 4rem;
+    padding-top: 2%;
+    /* color: var(--main-color); */
+    /* text-shadow: 0.2rem 0.01rem black; */
+
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+}
+
+
+
+.department-icon {
+    /* .department-icon */
+    position: relative;
+    overflow: hidden;
+    width: 35rem;
+    z-index: 2;
+
+}
+
+
+.image-container {
+    /* .department-icon .image-container  */
+    background-color: var(--main-color);
+    border-radius: 20%;
+    width: 6rem;
+    height: 6rem;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 90px;
+
+
+}
+
+.img-aesthetics {
+    /* .department-icon .image-container img */
+    /*.container3*/
+    width: 6rem;
+    height: 6rem;
+
+}
+
+.department-icon::after {
+    /* .department-icon::after */
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url(../imges/abstract-medical-background-with-flat-icons-symbols-concepts-ideas-healthcare-technology-innovation-medicine-health-science-research_120542-415.avif);
+
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: -101%;
+    z-index: -1;
+    transition: 1s;
+    filter: blur(5px);
+}
+
+
+
+.department-icon:hover::after {
+    left: 0;
+}
+
+.departmentIconP {
+    /* .department-icon P  */
+    /*.container3*/
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+    /* color: var(--Paraghraph-color); */
+    padding: 0.5rem;
+}
+
+.departmentIconP {
+    /* department-icon p  */
+    padding: 0.5rem;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+}
+
+.pharag {
+
+    color: var(--Paraghraph-color);
+
+}

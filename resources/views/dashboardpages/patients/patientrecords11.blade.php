@@ -1,88 +1,104 @@
 @extends('dashboard')
+{{-- @extends('App\Models\User') --}}
 
 <head>
+    <link href="{{asset('css/patientrecords.css')}}" rel="stylesheet">
+    <link href="{{asset('css/main.css')}}" rel="stylesheet">
+    <link href="{{asset('css/all.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('webfonts/')}}" rel="stylesheet">
+
     @section('Profile') Paitent Records @endsection
-    <style>
-        .fixed_header {
-            /* width: 400px; */
-            width: 100vh;
-
-            table-layout: fixed;
-            border-collapse: collapse;
-        }
-
-        .fixed_header tbody {
-            display: block;
-            width: 100%;
-            overflow: auto;
-            /* height: 100px; */
-        }
-
-        .fixed_header thead tr {
-            display: block;
-        }
-
-        .fixed_header thead {
-            background: black;
-            color: #fff;
-        }
-
-        .fixed_header th,
-        .fixed_header td {
-            padding: 5px;
-            text-align: left;
-            width: 200px;
-        }
-    </style>
+    <!-- {{-- <title>View Paitent Records</title> --}} -->
 </head>
 
-{{-- @section('content') --}}
-@section('content')
 
-<table class="fixed_header">
-    <thead>
-        <tr>
-            <th>Col 1</th>
-            <th>Col 2</th>
-            <th>Col 3</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <td>10</td>
-        </tr>
-        <tr>
-            <td>11</td>
-            <td>12</td>
-            <td>13</td>
-            <td>14</td>
-            <td>15</td>
-        </tr>
-        <tr>
-            <td>16</td>
-            <td>17</td>
-            <td>18</td>
-            <td>19</td>
-            <td>20</td>
-        </tr>
-        <tr>
-            <td>21</td>
-            <td>22</td>
-            <td>23</td>
-            <td>24</td>
-            <td>25</td>
-        </tr>
-    </tbody>
-</table>
+@section('content')
+<div class="scroll-container">
+    {{-- <table class="table">
+        <thead>
+            <tr class='fixed'>
+                <th scope="col">first_name</th>
+                <th scope="col">Last_name</th>
+                <th scope="col">phone_number</th>
+                <th scope="col">doctor</th>
+                <th scope="col">admin</th>
+
+            </tr>
+        </thead>
+    </table> --}}
+    <table class="table">
+
+        <thead>
+            <tr class='fixed'>
+                <th scope="col">first_name</th>
+                <th scope="col">Last_name</th>
+                <th scope="col">phone_number</th>
+                <th scope="col">doctor</th>
+                <th scope="col">admin</th>
+            </tr>
+        </thead>
+
+
+        <tbody>
+
+
+            @foreach ($patientRecords as $patient )
+
+            <tr>
+                <th scope="row">{{ $patient->first_name }}</th>
+                <td>{{ $patient->Last_name}}</td>
+                <td>{{ $patient->phone_number}}</td>
+                {{-- <td>patient->{{ $patient->admin_id->first_name}}</td> --}}
+
+                {{-- @foreach (Auth::user()->$patientRecords as $p) --}}
+                {{-- $user = auth()->user(); --}}
+
+                {{-- $profile = $user->profile; --}}
+                {{-- $name = $user->profile->display_name --}}
+                {{-- @foreach($patientRecords as $patient=> $inquiryValue) --}}
+                <td>{{$patient->user->first_name}}</td>
+                <td>{{$patient->user2->first_name}}</td>
+                {{-- <td>{{ User()->find(doctor_id)->first_name }}</td> --}}
+
+                {{-- <td>{{ \Auth::user::find($id)->first_name}}</td> --}}
+
+                {{-- <td>{{ $inquiryValue->admin_id }}</td> --}}
+                {{-- @endforeach --}}
+
+            </tr>
+
+            @endforeach
+        </tbody>
+
+    </table>
+
+
+    {{-- <table class="fixed_header">
+        <thead>
+            <tr>
+                {{-- <th scope="col">#</th> -- }}
+                <th scope="col">first_name</th>
+                <th scope="col">Last_name</th>
+                <th scope="col">phone_number</th>
+                <th scope="col">doctor</th>
+                <th scope="col">admin</th>
+            </tr>
+        </thead>
+        @foreach ( $patientRecords as $patient )
+        <tbody>
+            <tr>
+                <th scope="row">{{ $patient->first_name }}</th>
+                <td>{{ $patient->Last_name}}</td>
+                <td>{{ $patient->phone_number}}</td>
+                {{-- <td>patient->{{ $patient->admin_id->first_name}}</td> -- }}
+                <td>{{ $patient->doctor_id }}</td>
+                <td>{{ $patient->admin_id }}</td>
+            </tr>
+
+
+        </tbody>
+        @endforeach
+    </table> --}}
+</div>
 @endsection

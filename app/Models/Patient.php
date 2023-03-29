@@ -26,4 +26,10 @@ class Patient extends Model
         // hasOne   , 'admin_id'
     }
 
+    function user2() //doctor
+    {
+        return $this->belongsTo(User::class, 'admin_id');
+        // hasOne   , 'admin_id'
+    }
+
 }

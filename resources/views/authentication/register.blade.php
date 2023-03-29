@@ -1,4 +1,7 @@
+@extends('dashboard')
+
 <head>
+  @section('title')Add New User @endsection
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
@@ -12,21 +15,23 @@
   <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
   <link href="{{asset('webfonts/')}}" rel="stylesheet">
 
-  {{-- <title>@yield('title')</title> --}}
+
 
 </head>
+@section('content')
 {{-- style="background-color: #eee; --}}
-<section class=" section vh-100 ">
-  <div class="container h-100">
-    <div class="row  justify-content-center align-items-center h-100">
+<section class=" section  ">
+  <div class="container ">
+    <div class="row  justify-content-center align-items-center">
       {{-- row d-flex --}}
       <div class="col-lg-12 col-xl-11">
-        <div class="container-card card text-black">
-          <div class=" card-body p-md-5">
+        <div class="container-card  text-black">
+          <div class="">
+            {{-- p-md-5 --}}
             <div class="row justify-content-center">
-              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+              <div class="col-md-10 col-lg-6 col-xl-5  ">
 
-                <h1 class="title text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Register</h1>
+                <h1 class="title text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Add User</h1>
 
                 <form class="mx-1 mx-md-4" action="{{ url("registerHandler") }}" method="POST"
                   enctype="multipart/form-data">
@@ -148,13 +153,13 @@
 
 
                   <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                    <button type="submit" class="btn px-5 py-3 fw-bold  button btn-lg">Register</button>
+                    <button type="submit" class="btn px-5 py-3 fw-bold  button btn-lg">Add User</button>
                   </div>
 
                 </form>
 
               </div>
-              <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+              <div class="image-container col-md-10 col-lg-6 col-xl-7 d-flex align-items-center ">
 
                 <img src="{{ asset('/imges/3d_icon.png') }}" class="img-fluid" alt="Sample image">
 
@@ -166,3 +171,5 @@
     </div>
   </div>
 </section>
+
+@endsection

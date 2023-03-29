@@ -72,7 +72,8 @@
 @include('landingpages.home')
 @include('landingpages.about')
 @include('landingpages.department')
-
+@include('landingpages.department_aesthetics')
+@include('landingpages.depatrment_treatments')
 
 <script src="{{asset('js/navbar.js')}}"></script>
 {{-- type="text/javascript" --}}

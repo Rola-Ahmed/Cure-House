@@ -47,3 +47,5 @@ Route::post('profileUpdate/{id}', [ProfileController::class, 'Update1']);
 Route::get('trail22', [AuthController::class, 'trail']);
 
 Route::get('patient/records', [PatientController::class, 'PatientsRecord']);
+
+Route::get('add/new/patient', [PatientController::class, 'AddNewPatient']);
