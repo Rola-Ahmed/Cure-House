@@ -21,7 +21,7 @@
           {{-- {/* class={department-icon p} */} --}}
 
           <a name="dental-aesthetics">
-            <button {{-- // class={` btn px-5 py-3 button}`} --}} class='btn px-5 py-1 fw-bold  button'>
+            <button class='btn px-5 py-1 fw-bold button-department'>
               {{-- {/* btn px-5 py-3 */} --}}
               learn more
             </button>
@@ -40,8 +40,7 @@
           </p>
 
           <a name="dental-treatments">
-            <button {{-- // class={` btn px-5 py-3 button}`} --}} class='btn px-5 py-1 fw-bold  button'>
-              {{-- {/* btn px-5 py-3 */} --}}
+            <button class='btn px-5 py-1 fw-bold button-department'>
               learn more
             </button>
           </a>

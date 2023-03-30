@@ -111,3 +111,4 @@
         </div>
     </div>
 </section>
+<script src="{{asset('js/preventFormRefresh.js')}}"></script>

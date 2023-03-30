@@ -1,4 +1,4 @@
-// let form = document.getElementById("formId");
+// let form = document.getElementById("button");
 // function submitForm(event) {
 //     event.preventDefault();
 // }
@@ -22,7 +22,19 @@
 
 let dropDownBtn = document.getElementById("new-patient-dropDown-Btn");
 dropDownBtn.addEventListener("click", function () {
-    console.log("defefrfef");
+    let dropDownList = document.getElementById("drop-down-menu-list");
+    let caretUpIcon = document.getElementById("caret-up");
+    let caretDownIcon = document.getElementById("caret-down");
+
+    if (dropDownList.classList.contains("d-none")) {
+        dropDownList.classList.remove("d-none");
+        caretDownIcon.classList.add("d-none");
+        caretUpIcon.classList.remove("d-none");
+    } else {
+        dropDownList.classList.add("d-none");
+        caretDownIcon.classList.remove("d-none");
+        caretUpIcon.classList.add("d-none");
+    }
 });
 // let element = document.getElementsByTagName("a");
 // console.log(element);

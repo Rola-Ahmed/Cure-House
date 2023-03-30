@@ -173,3 +173,4 @@
 </section>
 
 @endsection
+<script src="{{asset('js/preventFormRefresh.js')}}"></script>

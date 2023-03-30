@@ -183,7 +183,7 @@
 
                 </div> --}}
                 <button id='add_patient_Btn' type="submit" class="btn
-                px-5 py-2 button  ">Add patient </button>
+                px-5 py-2 button-new-record  ">Add patient </button>
 
                 {{-- <button type="submit" class="btn btn-primary">Sign in</button> --}}
             </div>

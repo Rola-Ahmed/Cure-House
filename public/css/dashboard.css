@@ -1,7 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .navbar-global {
     /* background-color: indigo; */
     background-color: var(--background-color-main);
-    height: 5rem;
+    height: 3rem;
     position: sticky !important;
 
     top: 0;
@@ -214,4 +219,21 @@ div.content {
 
 .collapsed+.main-content {
     margin-left: 60px;
+}
+
+.button-dash-board {
+    border: none;
+    padding: 0.5rem;
+    width: 100%;
+    /* class='w-100 p-1' */
+    margin: auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+i {
+    padding: 0.5rem;
+
 }

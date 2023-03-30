@@ -95,7 +95,7 @@ input {
 }
 
 
-button {
+.button-new-record {
     margin: 1rem !important;
     background-color: var(--main-color) !important;
     color: white !important;

@@ -63,7 +63,7 @@
   {{-- onclick="{{ url("login") }}" --}}
   <div>
     {{-- onlcik of login done js --}}
-    <button type="button" class='btn px-5 py-1 button' onclick="location.href='{{ url('login') }}'">login</button>
+    <button type="button" class='btn px-5 py-1 button-nav' onclick="location.href='{{ url('login') }}'">login</button>
     {{-- {{ url("login") }} --}}
 
   </div>

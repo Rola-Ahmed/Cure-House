@@ -131,13 +131,13 @@
 
             <div class="form-group column ">
                 <div class="col-sm-10">
-                    <button id='edit_btn' type="button" class="btn px-5 py-1 button">edit</button>
+                    <button id='edit_btn' type="button" class="btn px-5 py-1 button-profile">edit</button>
                     {{-- type="submit" id='edit_btn' --}}
                 </div>
 
                 <div class="col-sm-10">
                     <button id='update_btn' type="submit" class="btn
-                    px-5 py-1 button d-none " {{-- id='update_btn'
+                    px-5 py-1 button-profile d-none " {{-- id='update_btn'
                         onclick="location.href='{{ url('profileUpdate/'.Auth::user()->id) }}'" --}}>
                         save update</button>
 

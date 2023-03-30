@@ -25,8 +25,8 @@
 
 
 <nav class="navbar navbar-inverse navbar-global navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
+    {{-- <div class="container-fluid">
+        {{-- <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
                 aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -34,20 +34,18 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Santhosh Vertical Nav Project</a>
-        </div>
+            {{-- <a class="navbar-brand" href="#">Santhosh Vertical Nav Project</a> --} }
+        </div> --} }
         {{-- <div id="navbar" class="collapse navbar-collapse h-100">
             <ul class="nav navbar-nav navbar-user navbar-right">
                 <li><a href="#"><span class="glyphicon glyphicon-user"></span> Santhosh Giridara</a></li>
                 <li><a href="#about"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
             </ul>
-        </div> --}}
+        </div> --} }
         <!--/.nav-collapse -->
-    </div>
-
-
-
+    </div> --}}
 </nav>
+
 {{-- <nav class="navbar-primary">
     <a href="#" class="btn-expand-collapse"><span class="glyphicon glyphicon-menu-left"></span></a>
     <ul class="navbar-primary-menu">
@@ -65,14 +63,22 @@
     <a id="eefe" href="#home">DashBoard</a>
     {{-- class="active" --}}
     {{-- <i class="fa-solid fa-gauge-simple"></i> --}}
-    <a href="{{ url("registerForm") }}"><i class="fa-solid fa-user-doctor"></i>Add Doctors</a> {{-- Admin
+    <a class="button-dash-board" href="{{ url("registerForm") }}"><i class="fa-solid fa-user-doctor"></i>Add
+        Doctors</a> {{-- Admin
     registerForm --}}
-    <a id='new-patient-dropDown-Btn' href=""><i class="fa-solid fa-hospital-user"></i>Add Patient <i
-            class="fa-solid fa-caret-down"></i></a>
-    <div class='drop-down-menu'>
+    <button id='new-patient-dropDown-Btn' class="button-dash-board"><span><i
+                class="fa-solid fa-hospital-user"></i></span>Add
+        Patient <i id='caret-down' class="fa-solid fa-caret-down "></i>
+        <i id='caret-up' class="fa-solid fa-caret-up d-none"></i> </button>
+    <div id='drop-down-menu-list' class="d-none">
         <a class='ml-3' href="{{ url("add/new/patient") }}">Add new Record </a>
-        <a href="#news"><i class="fa-solid fa-calendar-check"></i>Add Appointments</a>
+        <a class='ml-3' href="{{ url("add/new/patient") }}">Add Medical History </a>
+        <a class='ml-3' href="{{ url("add/new/patient") }}">Add emergency Contact</i> </a>
+
+        {{-- <button type="button" onclick="window.location=" window.location='{{ url("add/new/patient") }}'"><i
+                class=" fa-solid fa-calendar-check"></i>Add Medical History</button> --}}
     </div>
+
     <a href="{{ url("patient/records") }}"><i class="fa-solid fa-book-medical"></i>Patient records </a>
 
     <a href="#news">Appointmetns</a>
