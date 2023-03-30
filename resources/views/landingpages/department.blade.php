@@ -38,11 +38,19 @@
           <p class='departmentIconP'>
             Dental Treatments
           </p>
-          <Link to="dentalTreatments">
-          <button class='btn px-5 py-1 fw-bold  button'>
-            learn more
-          </button>
-          </Link>
+
+          <a name="dental-treatments">
+            <button {{-- // class={` btn px-5 py-3 button}`} --}} class='btn px-5 py-1 fw-bold  button'>
+              {{-- {/* btn px-5 py-3 */} --}}
+              learn more
+            </button>
+          </a>
+          {{-- <a name="dental-treatments">
+            <button class='btn px-5 py-1 fw-bold button'>
+              learn more
+            </button>
+
+          </a> --}}
         </div>
       </div>
     </div>

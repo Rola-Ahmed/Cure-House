@@ -1,9 +1,10 @@
 <head>
+    {{--
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
-    </script>
+    </script> --}}
 
 
     <link href="{{asset('css/main.css')}}" rel="stylesheet">
@@ -16,8 +17,8 @@
 
 </head>
 {{-- style="background-color: #eee; --}}
-<section class=" section vh-100 ">
-    <div class="container h-100">
+<section class=" section vh-100 " style="background-color: var(--background-color-main);">
+    <div class=" container h-100">
         <div class="row  justify-content-center align-items-center h-100">
             {{-- row d-flex --}}
             <div class="col-lg-12 col-xl-11">
@@ -28,8 +29,7 @@
 
                                 <h1 class="title text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Login</h1>
 
-                                <form class="mx-1 mx-md-4w p-1" style='margin:5rem;' action="{{ url("login") }}"
-                                    method="POST" enctype="multipart/form-data">
+                                <form id='formId' class="mx-1 mx-md-4w p-1" style='margin:5rem;' action="{{ url("login") }}" method="POST" enctype="multipart/form-data">
                                     @csrf
 
 

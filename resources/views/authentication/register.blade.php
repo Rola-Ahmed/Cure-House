@@ -33,7 +33,7 @@
 
                 <h1 class="title text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Add User</h1>
 
-                <form class="mx-1 mx-md-4" action="{{ url("registerHandler") }}" method="POST"
+                <form id='formId' class="mx-1 mx-md-4" action="{{ url("registerHandler") }}" method="POST"
                   enctype="multipart/form-data">
                   @csrf
                   {{-- First Name --}}

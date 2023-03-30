@@ -35,7 +35,7 @@ class UserSeeder extends Seeder
                 'email' => "$admin_first_names[$i]@gmail.com",
                 'phone_number' => '01113499373',
                 'password' => \Hash::make('123'),
-                'profile_image' => 'defualt-image',
+                'profile_image' => 'defualt-image.jpg',
 
                 'created_at' => now(),
                 'updated_at' => now(),
@@ -52,7 +52,7 @@ class UserSeeder extends Seeder
                 'first_name' => $doctor_first_names[$i],
                 'Last_name' => $doctor_last_names[$i],
                 'role' => "doctor",
-                'profile_image' => 'defualt-image',
+                'profile_image' => 'defualt-image.jpg',
                 ///'admin', 'doctor'
                 'email' => "$doctor_first_names[$i]@gmail.com",
                 'phone_number' => '01113499373',

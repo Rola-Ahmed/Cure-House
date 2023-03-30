@@ -15,7 +15,7 @@ return new class extends Migration {
 
 
 
-            $table->enum('role', ['female', 'male' ,'none'])->default('none');
+
             $table->enum('pregnant', ['yes', 'no'])->default('no');
             $table->string('images')->nullable();
 

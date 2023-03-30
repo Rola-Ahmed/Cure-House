@@ -49,3 +49,4 @@ Route::get('trail22', [AuthController::class, 'trail']);
 Route::get('patient/records', [PatientController::class, 'PatientsRecord']);
 
 Route::get('add/new/patient', [PatientController::class, 'AddNewPatient']);
+Route::post('add/new/patientHandler', [PatientController::class, 'AddNewPatientHandler']);

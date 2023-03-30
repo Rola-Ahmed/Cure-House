@@ -13,7 +13,7 @@
 
 </head>
 
-<body id="dental-aesthetics">
+<body>
     <section>
         <div class="container4">
             <div class="aboutTitle">
@@ -25,7 +25,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="dental-aesthetics">
         {{-- {/* vh-50 */} --}}
         <div class="container">
             <div class="row">

@@ -18,6 +18,9 @@ class Patient extends Model
         'phone_number',
         'doctor_id',
         "admin_id",
+        'birth_date',
+        'age',
+        'role',
     ];
 
     function user() //doctor

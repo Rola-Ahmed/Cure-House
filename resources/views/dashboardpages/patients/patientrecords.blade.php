@@ -29,7 +29,7 @@
             </tr>
         </thead>
     </table> --}}
-    <table class="table">
+    <table class="table table-striped">
 
         <thead>
             <tr class='fixed'>
