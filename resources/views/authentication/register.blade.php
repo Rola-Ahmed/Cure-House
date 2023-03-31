@@ -114,7 +114,7 @@
                     <div class="input-group flex-nowrap ">
                       <span class="input-group-text bg-transparent" id="addon-wrapping"><i
                           class="fa-solid fa-key  fa-lg me-2"></i></span>
-                      <input type="text" class="form-control" name='password' id='password' placeholder="Password">
+                      <input type="password" class="form-control" name='password' id='password' placeholder="Password">
                     </div>
 
                   </div>

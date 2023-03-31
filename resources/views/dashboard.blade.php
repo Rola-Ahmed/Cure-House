@@ -2,48 +2,40 @@
 
     <link href="{{asset('css/dashboard.css')}}" rel="stylesheet">
     <link href="{{asset('css/main.css')}}" rel="stylesheet">
-    {{--
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
-    </script> --}}
-    {{-- <title>@yield('title')</title> --}}
     <link href="{{asset('css/all.min.css')}}" rel="stylesheet">
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('webfonts/')}}" rel="stylesheet">
 
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
+
+
+
+
+
     <title>@yield('title')</title>
 </head>
 
 
-<nav class="navbar navbar-inverse navbar-global navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-global navbar-fixed-top pb-5 ">
     {{-- <div class="container-fluid">
-        {{-- <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            {{-- <a class="navbar-brand" href="#">Santhosh Vertical Nav Project</a> --} }
-        </div> --} }
-        {{-- <div id="navbar" class="collapse navbar-collapse h-100">
-            <ul class="nav navbar-nav navbar-user navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Santhosh Giridara</a></li>
-                <li><a href="#about"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
-            </ul>
-        </div> --} }
-        <!--/.nav-collapse -->
+        <div class="title-nav d-flex align-items-end">
+            <img class='img' src="{{ asset('/imges/3d_icon.png') }}" alt="icon" />
+            <p class='paraghraph'>
+                <span class='textLogoColor'>Cure Den</span>tal House
+            </p>
+        </div>
+
     </div> --}}
+    <div class="title-nav d-flex align-items-end">
+        <img class='img' src="{{ asset('/imges/3d_icon.png') }}" alt="icon" />
+        <p class='paraghraph'>
+            <span class='textLogoColor'>Cure Den</span>tal House
+        </p>
+    </div>
 </nav>
 
 {{-- <nav class="navbar-primary">
@@ -59,34 +51,83 @@
     </ul>
 </nav> --}}
 
-<div class="sidebar">
-    <a id="eefe" href="#home">DashBoard</a>
+<div class="sidebar pb-2 pr-2 pt-1">
+    {{-- <a id="eefe" href="#home">DashBoard</a> --}}
+
     {{-- class="active" --}}
     {{-- <i class="fa-solid fa-gauge-simple"></i> --}}
-    <a class="button-dash-board" href="{{ url("registerForm") }}"><i class="fa-solid fa-user-doctor"></i>Add
-        Doctors</a> {{-- Admin
-    registerForm --}}
-    <button id='new-patient-dropDown-Btn' class="button-dash-board"><span><i
-                class="fa-solid fa-hospital-user"></i></span>Add
-        Patient <i id='caret-down' class="fa-solid fa-caret-down "></i>
-        <i id='caret-up' class="fa-solid fa-caret-up d-none"></i> </button>
-    <div id='drop-down-menu-list' class="d-none">
-        <a class='ml-3' href="{{ url("add/new/patient") }}">Add new Record </a>
-        <a class='ml-3' href="{{ url("add/new/patient") }}">Add Medical History </a>
-        <a class='ml-3' href="{{ url("add/new/patient") }}">Add emergency Contact</i> </a>
-
-        {{-- <button type="button" onclick="window.location=" window.location='{{ url("add/new/patient") }}'"><i
-                class=" fa-solid fa-calendar-check"></i>Add Medical History</button> --}}
+    <div class="d-flex justify-content-around align-items-center   fw-bold ">
+        <a class="button-dash-board" href="{{ url("registerForm") }}"><i class="fa-solid fa-user-doctor"></i>Add
+            User</a>
     </div>
 
-    <a href="{{ url("patient/records") }}"><i class="fa-solid fa-book-medical"></i>Patient records </a>
+    <div class="d-flex justify-content-around align-items-center   fw-bold ">
+        <a class="button-dash-board" href="{{ url("") }}"><i class="fa-solid fa-user-clock"></i>Admin</a>
+    </div>
 
-    <a href="#news">Appointmetns</a>
-    <a href="#news"><i class="fa-solid fa-file-invoice-dollar"></i>income</a>
-    <a href="#news"><i class="fa-solid fa-wallet"></i>add Invokes</a>
-    <a href="#news"><i class="fa-solid fa-capsules"></i>Add prescription</a>
-    <a href="{{ url("profile") }}"><i class="fa-solid fa-user"></i>Profile</a>
-    <a href="{{ url("logout") }}"><i class="fa-solid fa-arrow-right-from-bracket"></i>Exit</a>
+
+    <div class="d-flex justify-content-around align-items-center   fw-bold pl-1 ">
+        <button id='new-patient-dropDown-Btn' class="button-dash-board"><span><i
+                    class="fa-solid fa-hospital-user"></i></span>Add
+            Patient <i id='caret-down' class="fa-solid fa-caret-down "></i>
+            <i id='caret-up' class="fa-solid fa-caret-up d-none"></i> </button>
+    </div>
+    <div id='drop-down-menu-list' class="d-none">
+        <a class='ml-3' href="{{ url("add/new/patient") }}">Add new Record </a>
+        <a class='ml-3' href="#">Add Medical History </a>
+        {{-- <a class='ml-3' href="#">Add emergency Contact</i> </a> --}}
+
+
+    </div>
+
+    <div class="d-flex justify-content-around align-items-center   fw-bold ">
+        <a class="button-dash-board" href="{{ url("patient/records") }}"><i
+                class="fa-solid fa-book-medical"></i>Patient
+            records</a>
+    </div>
+
+    <div class="d-flex justify-content-around align-items-center   fw-bold ">
+        <a class="button-dash-board" href="#"><i class="fa-solid fa-capsules"></i>Add prescription</a>
+    </div>
+
+
+    <div class="d-flex justify-content-around align-items-center   fw-bold ">
+        <a class="button-dash-board" href="#"><i class="fa-solid fa-file-invoice-dollar"></i>income</a>
+
+    </div>
+
+    <div class="d-flex justify-content-around align-items-center   fw-bold ">
+        <a class="button-dash-board" href="#"><i class="fa-solid fa-wallet"></i>add Invokes</a>
+
+    </div>
+
+    <div class="d-flex justify-content-around align-items-center   fw-bold ">
+        <a class="button-dash-board" href="#"><i class="fa-solid fa-truck-medical"></i>Emergency
+        </a>
+
+    </div>
+
+
+    <div class="d-flex justify-content-around align-items-center   fw-bold ">
+        <a class="button-dash-board" href="{{ url("profile") }}"><i class="fa-solid fa-user"></i>Profile</a>
+
+    </div>
+    <div class="d-flex justify-content-around align-items-center   fw-bold ">
+        <a class="button-dash-board" href="{{ url("logout") }}"><i
+                class="fa-solid fa-arrow-right-from-bracket"></i>Exit</a>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 </div>

@@ -7,9 +7,6 @@ use Illuminate\Http\Request;
 
 class AuthController extends Controller
 {
-    //
-    function trail()
-    {
-        return view('master');
-    }
+//
+
 }

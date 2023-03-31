@@ -88,4 +88,6 @@ class PatientController extends Controller
         //     ]);
         return redirect("add/new/patient")->with('message', 'Patient added Successfully');
     }
+
+
 }

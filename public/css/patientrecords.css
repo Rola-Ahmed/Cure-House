@@ -9,6 +9,24 @@
     /* padding-top: 10px; */
 }
 
+.img {
+    /* .navbar .title-nav img     */
+    width: 4rem;
+    height: 4rem;
+}
+
+.paraghraph {
+    /* .navbar .title-nav p */
+    font-family: 'Anton', sans-serif;
+    /* background-color: transparent; */
+    color: var(--main-color);
+}
+
+.textLogoColor {
+    /* .navbar .title-nav p .text-logo-color */
+    color: var(--base-color);
+}
+
 
 .tableFixHead {
     overflow-y: auto;
@@ -20,6 +38,10 @@
 
     /* gives an initial height of 200px to the table */
 }
+
+/* .tableFixHead tr:nth-child(odd) {
+    background-color: var(--background-color) !important;
+} */
 
 .tableFixHead thead th {
     background-color: var(--main-color);

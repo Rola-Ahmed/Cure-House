@@ -44,7 +44,7 @@ Route::get('dashboard', [DashboardController::class, 'Dashboard']);
 //get profile detials of the loged in user
 Route::get('profile', [ProfileController::class, 'index']);
 Route::post('profileUpdate/{id}', [ProfileController::class, 'Update1']);
-Route::get('trail22', [AuthController::class, 'trail']);
+
 
 Route::get('patient/records', [PatientController::class, 'PatientsRecord']);
 
