@@ -1,21 +1,18 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-// use App\Http\Controllers\HomeController;
+
 use App\Http\Controllers\LangingPageController;
-use App\Http\Controllers\LandingPageComponents\HomeController;
-use App\Http\Controllers\LandingPageComponents\AboutController;
+use App\Http\Controllers\Dashboard\AdminController;
 
 use App\Http\Controllers\authentication\RegisterController;
 use App\Http\Controllers\authentication\LoginController;
 use App\Http\Controllers\authentication\LogoutController;
 use App\Http\Controllers\Dashboard\DashboardController;
 use App\Http\Controllers\DashBoardComponents\ProfileController;
-use App\Http\Controllers\TrailController;
-use App\Http\Controllers\authentication\AuthController;
 use App\Http\Controllers\Dashboard\PatientController;
 
-/*
+/* 
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -28,7 +25,6 @@ use App\Http\Controllers\Dashboard\PatientController;
 
 Route::get('/', [LangingPageController::class, 'LangingPage']);
 
-Route::get('trail', [TrailController::class, 'index']);
 
 // Route::get('home', [HomeController::class, 'Home']);
 // Route::get('aboutus', [AboutController::class, 'About']);
@@ -50,3 +46,6 @@ Route::get('patient/records', [PatientController::class, 'PatientsRecord']);
 
 Route::get('add/new/patient', [PatientController::class, 'AddNewPatient']);
 Route::post('add/new/patientHandler', [PatientController::class, 'AddNewPatientHandler']);
+
+
+Route::get('Add/View/Admin', [AdminController::class, 'ViewAddAdmin']);

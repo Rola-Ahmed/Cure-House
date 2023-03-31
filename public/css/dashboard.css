@@ -182,7 +182,7 @@ div.content {
     /* margin-top: 60px; */
     margin-left: 200px;
     /* padding: 20px; */
-    display: flex;
+    /* display: flex; */
     /* background-color: #555; */
 
     height: calc(100vh - 80px);

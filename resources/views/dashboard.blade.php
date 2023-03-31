@@ -56,14 +56,18 @@
 
     {{-- class="active" --}}
     {{-- <i class="fa-solid fa-gauge-simple"></i> --}}
-    <div class="d-flex justify-content-around align-items-center   fw-bold ">
-        <a class="button-dash-board" href="{{ url("registerForm") }}"><i class="fa-solid fa-user-doctor"></i>Add
+    <div class="d-flex justify-content-around align-items-center   fw-bold  p-auto m-auto ">
+        <a class="button-dash-board " href="{{ url("registerForm") }}"><i
+                class="fa-solid fa-user-doctor bg-danger"></i>Add
             User</a>
     </div>
-
-    <div class="d-flex justify-content-around align-items-center   fw-bold ">
-        <a class="button-dash-board" href="{{ url("") }}"><i class="fa-solid fa-user-clock"></i>Admin</a>
+    {{--
+    <div class="d-flex justify-content-around align-items-center  m-0 fw-bold ">
+        <a class="button-dash-board" href="{{ url("registerForm") }}"><i class="fa-solid fa-user-clock"></i>Admin</a>
     </div>
+    <div class="d-flex justify-content-around align-items-center   fw-bold ">
+        <a class="button-dash-board" href="{{ url("Add/View/Admin") }}"><i class="fa-solid fa-user-clock"></i>Admin</a>
+    </div> --}}
 
 
     <div class="d-flex justify-content-around align-items-center   fw-bold pl-1 ">
