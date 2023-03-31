@@ -1,0 +1,71 @@
+* {
+    overflow: hidden;
+}
+
+.TitleAdmin {
+    /* display: flex; */
+    /* background-color: aqua; */
+
+}
+
+.container-admin {
+
+    border-radius: 1rem;
+    border: 0.1rem solid var(--main-color);
+}
+
+.container-addBtn {
+    /* border-radius: 1rem; */
+    border-bottom: 0.2rem solid var(--main-color);
+    /* padding: 2rem; */
+    overflow: hidden;
+}
+
+
+
+
+.table-scolling-admin {
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.table-scolling-admin thead th {
+    background: red;
+}
+
+.table-scolling-admin thead th {
+    position: sticky;
+    top: 0;
+}
+
+/* .table-scolling {
+   
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+
+.table thead th {
+    background-color: var(--main-color);
+    position: sticky;
+    top: 0;
+} */
+
+/* .fixed tr {
+    background-color: azure;
+    position: sticky;
+    top: 0px;
+}
+
+.fixed tr th {
+    background-color: blueviolet;
+    position: sticky !important;
+    top: 0px;
+} */
+
+.button-edit {
+    /* margin: 0.1rem !important; */
+    background-color: var(--main-color) !important;
+}
