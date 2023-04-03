@@ -16,6 +16,7 @@
 
 
 
+
     <title>@yield('title')</title>
 </head>
 
@@ -56,24 +57,22 @@
 
     {{-- class="active" --}}
     {{-- <i class="fa-solid fa-gauge-simple"></i> --}}
-    <div class="d-flex justify-content-around align-items-center   fw-bold  p-auto m-auto ">
-        <a class="button-dash-board " href="{{ url("registerForm") }}"><i
-                class="fa-solid fa-user-doctor bg-danger"></i>Add
-            User</a>
-    </div>
-    {{--
-    <div class="d-flex justify-content-around align-items-center  m-0 fw-bold ">
-        <a class="button-dash-board" href="{{ url("registerForm") }}"><i class="fa-solid fa-user-clock"></i>Admin</a>
-    </div>
     <div class="d-flex justify-content-around align-items-center   fw-bold ">
-        <a class="button-dash-board" href="{{ url("Add/View/Admin") }}"><i class="fa-solid fa-user-clock"></i>Admin</a>
-    </div> --}}
+        <a class="button-dash-board " href="{{ url("Add/View/Doctor") }}"><i
+                class="fa-solid fa-user-doctor {{-- bg-danger --}}   pb-0 "></i>Doctor</a>
+    </div>
+
+
+    <div class="d-flex justify-content-around align-items-center   fw-bold ">
+        <a class="button-dash-board" href="{{ url("Add/View/Admin") }}"><i
+                class="fa-solid fa-user-clock {{-- bg-danger --}}   pb-0 "></i>Admin</a>
+    </div>
 
 
     <div class="d-flex justify-content-around align-items-center   fw-bold pl-1 ">
         <button id='new-patient-dropDown-Btn' class="button-dash-board"><span><i
-                    class="fa-solid fa-hospital-user"></i></span>Add
-            Patient <i id='caret-down' class="fa-solid fa-caret-down "></i>
+                    class="fa-solid fa-hospital-user {{-- bg-danger --}}   pb-0"></i></span>Add
+            Patient <i id='caret-down' class="fa-solid fa-caret-down  {{-- bg-danger --}}   pb-0"></i>
             <i id='caret-up' class="fa-solid fa-caret-up d-none"></i> </button>
     </div>
     <div id='drop-down-menu-list' class="d-none">
@@ -86,39 +85,49 @@
 
     <div class="d-flex justify-content-around align-items-center   fw-bold ">
         <a class="button-dash-board" href="{{ url("patient/records") }}"><i
-                class="fa-solid fa-book-medical"></i>Patient
+                class="fa-solid fa-book-medical {{-- bg-danger --}}   pb-0"></i>Patient
             records</a>
     </div>
 
     <div class="d-flex justify-content-around align-items-center   fw-bold ">
-        <a class="button-dash-board" href="#"><i class="fa-solid fa-capsules"></i>Add prescription</a>
+        <a class="button-dash-board" href="#"><i class="fa-solid fa-capsules {{-- bg-danger --}}   pb-0"></i>Add
+            prescription</a>
+    </div>
+
+    <div class="d-flex justify-content-around align-items-center   fw-bold ">
+        <a class="button-dash-board" href="{{ url("appointments") }}"><i
+                class="fa-solid fa-clock{{-- bg-danger --}}   pb-0"></i>Appointments</a>
     </div>
 
 
     <div class="d-flex justify-content-around align-items-center   fw-bold ">
-        <a class="button-dash-board" href="#"><i class="fa-solid fa-file-invoice-dollar"></i>income</a>
+        <a class="button-dash-board" href="#"><i
+                class="fa-solid fa-file-invoice-dollar {{-- bg-danger --}}   pb-0"></i>income</a>
 
     </div>
 
     <div class="d-flex justify-content-around align-items-center   fw-bold ">
-        <a class="button-dash-board" href="#"><i class="fa-solid fa-wallet"></i>add Invokes</a>
+        <a class="button-dash-board" href="#"><i class="fa-solid fa-wallet {{-- bg-danger --}}   pb-0"></i>add
+            Invokes</a>
 
     </div>
 
     <div class="d-flex justify-content-around align-items-center   fw-bold ">
-        <a class="button-dash-board" href="#"><i class="fa-solid fa-truck-medical"></i>Emergency
+        <a class="button-dash-board" href="#"><i
+                class="fa-solid fa-truck-medical {{-- bg-danger --}}   pb-0"></i>Emergency
         </a>
 
     </div>
 
 
     <div class="d-flex justify-content-around align-items-center   fw-bold ">
-        <a class="button-dash-board" href="{{ url("profile") }}"><i class="fa-solid fa-user"></i>Profile</a>
+        <a class="button-dash-board" href="{{ url("profile") }}"><i
+                class="fa-solid fa-user {{-- bg-danger --}}   pb-0"></i>Profile</a>
 
     </div>
     <div class="d-flex justify-content-around align-items-center   fw-bold ">
         <a class="button-dash-board" href="{{ url("logout") }}"><i
-                class="fa-solid fa-arrow-right-from-bracket"></i>Exit</a>
+                class="fa-solid fa-arrow-right-from-bracket {{-- bg-danger --}}   pb-0"></i>Exit</a>
 
     </div>
 
@@ -141,42 +150,9 @@
 <div class="main-content">
     @yield('content')
 
-    {{-- <table border="1">
-        <tr>
-            <td>Id</td>
-            <td>First Name</td>
-            <td>Last Name</td>
-            <td>City Name</td>
-            <td>Email</td>
-        </tr>
-
-    </table> --}}
-    {{-- <div class='profle-card'>
-        <img src="/imges/home_background/background_section2.jpg" class="rounded" alt="Cinque Terre">
-    </div>
-    <div class='content-card'></div>
-    --}}
 
 
-    {{-- <table border="1">
-        <tr>
-            <td>Id</td>
-            <td>First Name</td>
-            <td>Last Name</td>
-            <td>City Name</td>
-            <td>Email</td>
-        </tr> --}}
-        {{-- @foreach ($user as $u)
-        <tr>
-            <td>{{ $u->id }}</td>
-            <td>{{ $u->first_name }}</td>
-            <td>{{ $u->last_name }}</td>
-            <td>{{ $u->role }}</td>
-            <td>{{ $u->email }}</td>
-            <td>{{ $u->phone_number }}</td>
-        </tr>
-        @endforeach --}}
-        {{-- @extends('dashboardpages.profile') --}}
+
 
 
 

@@ -12,6 +12,8 @@ use App\Http\Controllers\Dashboard\DashboardController;
 use App\Http\Controllers\DashBoardComponents\ProfileController;
 use App\Http\Controllers\Dashboard\PatientController;
 
+use App\Http\Controllers\DashBoardComponents\AppointmentController;
+
 /* 
 |--------------------------------------------------------------------------
 | Web Routes
@@ -49,3 +51,8 @@ Route::post('add/new/patientHandler', [PatientController::class, 'AddNewPatientH
 
 
 Route::get('Add/View/Admin', [AdminController::class, 'ViewAddAdmin']);
+Route::get('Add/View/Doctor', [AdminController::class, 'ViewAddDoctor']);
+Route::get("delete/admin/doctor/{id}", [AdminController::class, 'DeleteAdminDoctor']);
+
+
+Route::get('appointments', [AppointmentController::class, 'Appointments']);

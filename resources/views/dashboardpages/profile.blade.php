@@ -23,8 +23,8 @@
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('webfonts/')}}" rel="stylesheet">
 
-    @section('Profile') Create new Blog @endsection
-    <title>Profile</title>
+    @section('title')Profile @endsection
+    {{-- <title>Profile</title> --}}
 </head>
 
 @section('content')

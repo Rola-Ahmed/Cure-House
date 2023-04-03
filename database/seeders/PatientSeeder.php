@@ -291,7 +291,7 @@ class PatientSeeder extends Seeder
                 // 'doctor_id' => $forigenKey,
                 // 'admin_id' => $forigenKey,
                 'doctor_id' => random_int(1, 5),
-                'admin_id' => random_int(1, 5),
+                'admin_id' => random_int(1, 20),
                 'age' => rand(25, 90),
                 'birth_date' => rand(1, 12) . "/" . rand(1, 28) . "/" . rand(1933, 1998),
                 'created_at' => now(),

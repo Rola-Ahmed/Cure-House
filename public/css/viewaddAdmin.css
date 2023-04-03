@@ -5,39 +5,69 @@
 .TitleAdmin {
     /* display: flex; */
     /* background-color: aqua; */
-
+    width: 99% !important;
 }
 
 .container-admin {
 
     border-radius: 1rem;
     border: 0.1rem solid var(--main-color);
+    /* width: 99% !important; */
+    height: 99%;
 }
 
 .container-addBtn {
     /* border-radius: 1rem; */
     border-bottom: 0.2rem solid var(--main-color);
     /* padding: 2rem; */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
-
-
 .table-scolling-admin {
+    position: absolute;
+    /* overflow-y: scroll; */
+    /* overflow-y: auto; */
+    /* scroll-behavior: auto; */
+    /* width: 90%; */
+    height: 100%;
+    /* overflow: scroll; */
+    display: block;
+    overflow: auto;
+}
+
+thead {
+    width: calc(100% - 1em)
+        /* scrollbar is average 1em/16px width, remove it from thead width */
+}
+
+thead {
+    background: var(--main-color);
+}
+
+thead,
+tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    /* background-color: bisque !important; */
+    /* even columns width , fix width of table too*/
+}
+
+/* .table-scolling-admin {
     overflow: auto;
     height: 100%;
     width: 100%;
 }
 
 .table-scolling-admin thead th {
-    background: red;
+    background: var(--main-color);
 }
 
 .table-scolling-admin thead th {
     position: sticky;
     top: 0;
-}
+} */
 
 /* .table-scolling {
    

@@ -13,7 +13,6 @@ class DashboardController extends Controller
 
     function Dashboard()
     {
-
         // $users = User::get();
         // return view('dashboard', ['user' => $users]);
         return view('dashboard');

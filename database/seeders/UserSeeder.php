@@ -95,24 +95,7 @@ class UserSeeder extends Seeder
 
 
 
-        $doctor_first_names = ['Mohammed', 'Tamer', 'Dalia', 'Mona', 'Karim'];
-        $doctor_last_names = ['Eslam', 'Wasfi', 'Samir', 'Basem', 'Asal'];
-        for ($i = 0; $i < 5; $i++) {
-            \DB::table('users')->insert([
-                'first_name' => $doctor_first_names[$i],
-                'Last_name' => $doctor_last_names[$i],
-                'role' => "doctor",
-                'profile_image' => 'defualt-image.jpg',
-                ///'admin', 'doctor'
-                'email' => "$doctor_first_names[$i]@gmail.com",
-                'phone_number' => '01113499373',
-                'password' => \Hash::make('123'),
 
-                'created_at' => now(),
-                'updated_at' => now(),
-            ]);
-        }
-        ;
     }
 
 

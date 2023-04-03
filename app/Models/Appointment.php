@@ -29,4 +29,23 @@ class Appointment extends Model
     {
         return $this->hasOne(Prescription::class, 'prescription_id');
     }
+
+    function userDoctor() //doctor
+    {
+        return $this->belongsTo(User::class, 'doctor_id');
+        // hasOne   , 'admin_id'
+    }
+
+    function userAdmin() //doctor
+    {
+        return $this->belongsTo(User::class, 'admin_id');
+        // hasOne   , 'admin_id'
+    }
+
+    function userPatient() //doctor
+    {
+        return $this->belongsTo(User::class, 'patient_id');
+        // hasOne   , 'admin_id'
+    }
+
 }

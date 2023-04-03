@@ -16,19 +16,20 @@
 </head>
 @section('content')
 
-<div class="TitleAdmin  w-100 d-block">
+<div class="TitleAdmin  d-block">
     <h1 class=" p-2">Admin</h1>
 
 </div>
 
-<section class="container-admin  w-100 m-1 ">
+<section class="container-admin  m-1 ">
     <div class="container-addBtn d-flex justify-content-between align-items-center  p-2 ">
         <h5>Admin List</h5>
         <div class="d-flex justify-content-between  w-25 p-1 ">
             {{-- <input type="search" class="form-control rounded" placeholder="Search" /> --}}
             <input type="text" placeholder="Search.." class="p-1 rounded-2">
 
-            <button class=" btn button-edit d-flex justify-content-between align-items-center p-1"><i
+            <button onclick="location.href='{{ url('registerForm') }}'"
+                class=" btn button-edit d-flex justify-content-between align-items-center p-1"><i
                     class="fa-solid fa-plus"></i> Add
                 Admin</button>
 
@@ -38,12 +39,12 @@
 
 
 
-    <div class=" table-scolling-admin">
+    <div class=' position-relative w-100 h-100'>
 
         <table class="table align-middle mb-0 ">
             <thead>
                 <tr>
-                    <th style='position: sticky; top: -1px;background: red' class="bg-danger position-sticky">Name</th>
+                    <th>Name</th>
                     <th>Age</th>
                     <th>Gender</th>
                     <th>Contact</th>
@@ -51,7 +52,7 @@
                 </tr>
             </thead>
 
-            <tbody>
+            <tbody class="table-scolling-admin">
                 @foreach ($admins as $admin )
                 <tr>
                     <td>
@@ -80,12 +81,10 @@
                             <i class="fa-solid fa-pen-to-square"></i>
                         </button> --}}
 
-
                         <button type="button" class="btn px-1 py-1 button-edit"><i
                                 class="fa-solid fa-pen-to-square"></i></button>
-
-                        <button type="button" class="btn px-1 py-1 button-edit"><i
-                                class="fa-solid fa-trash"></i></button>
+                        <button onclick='location.href="{{ url("delete/admin/doctor/$admin->id") }}"' type="button"
+                            class="btn px-1 py-1 button-edit"><i class="fa-solid fa-trash"></i></button>
 
 
                     </td>
