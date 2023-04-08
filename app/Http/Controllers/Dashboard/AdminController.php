@@ -38,5 +38,5 @@ class AdminController extends Controller
 //     return view("Blogs.edit", ["blog" => $blog]);
 //     //  dd($blog);
 // }
-
+ 
 }

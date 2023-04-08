@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\User;
 
 class PatientSeeder extends Seeder
 {
@@ -288,10 +289,12 @@ class PatientSeeder extends Seeder
                 //'phone_number' => \Str::random(13),
                 'phone_number' => '01113499373',
 
-                // 'doctor_id' => $forigenKey,
-                // 'admin_id' => $forigenKey,
-                'doctor_id' => random_int(1, 5),
-                'admin_id' => random_int(1, 20),
+
+                // 'doctor_id' => random_int(1, 5),
+                // 'admin_id' => random_int(1, 20),
+
+                'admin_id' => User::all()->where('role', 'admin')->random()->id,
+                "doctor_id" => User::all()->where('role', 'doctor')->random()->id,
                 'age' => rand(25, 90),
                 'birth_date' => rand(1, 12) . "/" . rand(1, 28) . "/" . rand(1933, 1998),
                 'created_at' => now(),
